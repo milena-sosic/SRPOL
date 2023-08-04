@@ -26,19 +26,20 @@ have a purpose to modify the polarity intensity of an upcoming sentiment-laden w
 ```
 
 ### Negations
-  
+SRPOL considers negations for the upcoming phrase which could include adverb and negation modifiers in addition to the first upcoming standard sentiment-laden word. It identifies negation signals such as the Serbian words 'ne' or 'ni' (eng. 'not') which reverse the score:
+
 ```math
 \textit{"Film\ \textbf{nije}\ ($\rightarrow$ NEG)\ \textbf{zanimljiv}" (p=+0.53) $\xrightarrow[\times (-1)]{+0.53 }$ -0.53}
 ```
 
 ### Exclamation Marks
-  
+exclamation mark increase the perceived sentiment by an average of 6\% for one, and of 18\% for the sequence of more than two exclamation marks.
 ```math 
 \textit{"Odličan film\textbf{!}"($\leftarrow\times$ 1.06)} \xrightarrow[\times 1.06]{p=+0.57}+0.60
 ```
 
 ### Elongated Words
-  
+Words that contains a repeating character or group of characters more than two times, emphasizing that word has been identified as sentiment trigger
 ```math 
 \textit{"Tako\ \textbf{dooooosadan} (p=-0.24)..." $\xrightarrow[1.27]{\times 1.05^{chr(o)} }$ "Tako\ \textbf{dosadan}..."(p=-0.30)}
 ```
@@ -68,6 +69,6 @@ w_{i}=\sum_{m}^{S}|sign(P_{s}^{i}) = sign(P_{s}^{m})|
 P_{s} = \frac{\sum_{i}P_{w}^{i}}{k}, i \in [1, k], k \in [1, S]
 ```
 ### Further Work
-- Improve the lexicon word base
-- Evaluate other sentiment triggers
+- Increase the number of the words in the SentiWords.SR lexicon by using advanced machine learning methods
+- Evaluate other possible sentiment triggers
 - Evaluate other segmentation techniques and methods for the final score calculation
