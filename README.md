@@ -25,7 +25,7 @@ In this work, we propose a new lexicon based approach for text polarity detectio
 ### Exclamation Marks
   
 ```math 
-\textit{"Odličan film\textbf{!}"($\leftarrow$ \times 1.06)} $\xrightarrow[\times 1.06]{p=+0.57}$+0.60
+\textit{"Odličan film\textbf{!}"(\leftarrow \times 1.06)} \xrightarrow[\times 1.06]{p=+0.57}$+0.60
 ```
 
 ### Elongated Words
