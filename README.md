@@ -9,7 +9,15 @@
 
 Identifying the semantic orientation or polarity of words is one of the most important topics in sentiment analysis tasks.
 
-In this work, we propose a new lexicon based approach for text polarity detection using sentiment triggers which are adding contextual semantic during the analysis. The existing word polarity dictionary in Serbian has been extended containing approximately 15000 words annotated with polarity strength. Serbian sentiment framework (SRPOL), relying on the new lexicon and the following sentiment triggers:
+In this work, we propose a new lexicon based approach for text polarity detection using sentiment triggers which are adding contextual semantic during the analysis. 
+
+<img src="./images/translation_stat.png" height="300"/> <img src="./images/polarity_per_pos.png" height="300"/> 
+
+
+The existing word polarity dictionary in Serbian has been extended containing approximately 15000 words annotated with polarity strength. 
+
+
+Serbian sentiment framework (SRPOL), relying on the new lexicon and the following sentiment triggers:
 ### Adverb Modifiers
   
 ```math 
@@ -36,9 +44,9 @@ In this work, we propose a new lexicon based approach for text polarity detectio
 
 ### Emoticons and Emojis
   
-```math
 
-\textit{"Divan (p=+0.4)\ film (p=+0.14) (p=+0.678)" $\xrightarrow[]{}$ +0.41}
+```math 
+\textit{"Divan (p=+0.4)\ film (p=+0.14)}\ 😊\ \textit{(p=+0.678)" $\xrightarrow[]{}$ +0.41}
 ```
 
 ### Text Segmentation
