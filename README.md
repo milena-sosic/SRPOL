@@ -6,3 +6,5 @@
 ![Python](https://img.shields.io/badge/Python-3-brightgreen)
 
 # SRPOL - A lexicon based framework for sentiment strength of Serbian texts
+
+$$ \textit{"\textbf{Veoma}\ ($\rightarrow$ MOD=1.2)\ \textbf{dobar}\ (p=+0.43)\ film..." $\xrightarrow[]{1.2 \times (+0.43) }$ +0.52}  $$
