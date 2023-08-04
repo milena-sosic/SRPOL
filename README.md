@@ -11,17 +11,27 @@ Identifying the semantic orientation or polarity of words is one of the most imp
 
 In this work, we propose a new lexicon based approach for text polarity detection using sentiment triggers which are adding contextual semantic during the analysis. The existing word polarity dictionary in Serbian has been extended containing approximately 15000 words annotated with polarity strength. Serbian sentiment framework (SRPOL), relying on the new lexicon and the following sentiment triggers:
 - Adverb Modifiers
+  
 $$ \textit{"\textbf{Veoma}\ ($\rightarrow$ MOD=1.2)\ \textbf{dobar}\ (p=+0.43)\ film..." $\xrightarrow[]{1.2 \times (+0.43) }$ +0.52}  $$
 
-- Negations
+## Negations
+  
 $$ \textit{"Film\ \textbf{nije}\ ($\rightarrow$ NEG)\ \textbf{zanimljiv}" (p=+0.53) $\xrightarrow[\times (-1)]{+0.53 }$ -0.53} $$
 
-- Exclamation Marks
+## Exclamation Marks
+  
 $$ \textit{"Odličan film\textbf{!}"($\leftarrow$ \times 1.06)} $\xrightarrow[\times 1.06]{p=+0.57}$+0.60 $$
 
-- Elongated Words
+## Elongated Words
+  
 $$ \textit{"Tako\ \textbf{dooooosadan} (p=-0.24)..." $\xrightarrow[1.27]{\times 1.05^{chr(o)} }$ "Tako\ \textbf{dosadan}..."(p=-0.30)} $$
 
-- Emoticons and Emojis
+## Emoticons and Emojis
+  
 $$ \textit{"Divan (p=+0.4)\ film (p=+0.14) \emojismiley (p=+0.678)" $\xrightarrow[]{}$ +0.41} $$
+
+## Segmentation
+
+$$ P_{text} = \frac{\sum_{i}^{S}w_{i} * P_{s}^{i}}{\sum_{i}^{S}w_{i}}, w_{i}=\sum_{m}^{S}|sign(P_{s}^{i}) = sign(P_{s}^{m})| $$
+$$ P_{s} = \frac{\sum_{i}^{k}P_{w}^{i}}{k} $$
 
