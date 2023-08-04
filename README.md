@@ -44,7 +44,7 @@ In this work, we propose a new lexicon based approach for text polarity detectio
 ### Segmentation
 
 ```math 
-P_{text} = \frac{\sum_{i}^{S}w_{i} * P_{s}^{i}}{\sum_{i}^{S}w_{i}}, w_{i}=\sum_{m}^{S}|sign(P_{s}^{i}) = sign(P_{s}^{m})|
+P_{text} = \frac{\sum_{i}{S}w_{i} * P_{s}^{i}}{\sum_{i}^{S}w_{i}}, w_{i}=\sum_{m}^{S}|sign(P_{s}^{i}) = sign(P_{s}^{m})|
 ```
 ```math 
 P_{s} = \frac{\sum_{i}^{k}P_{w}^{i}}{k}
