@@ -50,6 +50,6 @@ P_{text} = \frac{\sum_{i}w_{i} * P_{s}^{i}}{\sum_{i}w_{i}}, i \in [1, S]
 w_{i}=\sum_{m}^{S}|sign(P_{s}^{i}) = sign(P_{s}^{m})|
 ```
 ```math 
-P_{s} = \frac{\sum_{i}P_{w}^{i}}{k}, i \in [1, S], k \in [1, S]
+P_{s} = \frac{\sum_{i}P_{w}^{i}}{k}, i \in [1, k], k \in [1, S]
 ```
 
