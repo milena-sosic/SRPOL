@@ -9,7 +9,7 @@
 
 Identifying the semantic orientation or polarity of words is one of the most important topics in sentiment analysis tasks.
 
-In this work, we propose a new lexicon based approach for text polarity detection using sentiment triggers which are adding contextual semantic during the analysis. 
+In this work, we propose a new lexicon based approach for text polarity detection using sentiment triggers which are adding contextual semantic during the analysis. Lexicon SentiWords.SR is based on the English version lexicon [SentiWords](https://arxiv.org/abs/1510.09079) containing roughly 155.000 words associated with a sentiment score included between -1 and 1. SentiWords.SR contains ~15000 words (e.g. lemma & PoS pairs) which are derived upon extensive evaluation of the translated lexicon.
 
 <img src="./images/translation_stat.png" height="250"/> <img src="./images/polarity_per_pos.png" height="250"/> 
 
