@@ -19,6 +19,7 @@ The existing word polarity dictionary in Serbian has been extended containing ap
 
 Serbian sentiment framework (SRPOL), relying on the new lexicon and the following sentiment triggers:
 ### Adverb Modifiers
+have a purpose to modify the polarity intensity of an upcoming sentiment-laden word, but not to change its orientation.
   
 ```math 
 \textit{"\textbf{Veoma}\ ($\rightarrow$ MOD=1.2)\ \textbf{dobar}\ (p=+0.43)\ film..." $\xrightarrow[]{1.2 \times (+0.43) }$ +0.52}
@@ -55,6 +56,7 @@ Serbian sentiment framework (SRPOL), relying on the new lexicon and the followin
 
 
 ### Text Segmentation
+The primary goal of splitting text into segments is to help in improving the polarity scoring for the long text with mixed sentiments detected on the containing segments. SRPOL assess the polarity score for each segment (sentence) of a particular text and using a majority rule approach we predict a new sentiment score.
 
 ```math 
 P_{text} = \frac{\sum_{i}w_{i} * P_{s}^{i}}{\sum_{i}w_{i}}, i \in [1, S]
