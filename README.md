@@ -56,7 +56,7 @@ have a purpose to modify the polarity intensity of an upcoming sentiment-laden w
 
 
 ### Text Segmentation
-The primary goal of splitting text into segments is to help in improving the polarity scoring for the long text with mixed sentiments detected on the containing segments. SRPOL assess the polarity score for each segment (sentence) of a particular text and using a majority rule approach we predict a new sentiment score.
+The primary goal of splitting text into segments is to help in improving the polarity scoring for the long text with mixed sentiments detected on the containing segments. SRPOL assess the polarity score for each segment (sentence) of a particular text and using a majority rule approach, predicts sentiment score for the given text:
 
 ```math 
 P_{text} = \frac{\sum_{i}w_{i} * P_{s}^{i}}{\sum_{i}w_{i}}, i \in [1, S]
@@ -67,4 +67,7 @@ w_{i}=\sum_{m}^{S}|sign(P_{s}^{i}) = sign(P_{s}^{m})|
 ```math 
 P_{s} = \frac{\sum_{i}P_{w}^{i}}{k}, i \in [1, k], k \in [1, S]
 ```
-
+### Further Work
+- Improve the lexicon word base
+- Evaluate other sentiment triggers
+- Evaluate other segmentation techniques and methods for the final score calculation
