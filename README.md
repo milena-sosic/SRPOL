@@ -46,7 +46,7 @@ Serbian sentiment framework (SRPOL), relying on the new lexicon and the followin
   
 
 ```math 
-\textit{"Divan (p=+0.4)\ film (p=+0.14)}\ 😊\ \textit{(p=+0.678)" $\xrightarrow[]{}$ +0.41}
+\textit{"Divan (p=+0.4)\ film (p=+0.14)} 😊 \textit{(p=+0.678)" $\xrightarrow[]{}$ +0.41}
 ```
 
 ### Text Segmentation
