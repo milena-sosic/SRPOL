@@ -9,7 +9,7 @@
 
 Identifying the semantic orientation or polarity of words is one of the most important topics in sentiment analysis tasks.
 
-In this work, we propose a new lexicon based approach for text polarity detection using sentiment triggers which are adding contextual semantic during the analysis. Lexicon SentiWords.SR is based on the English version lexicon [SentiWords](https://arxiv.org/abs/1510.09079) containing roughly 155.000 words associated with a sentiment score included between -1 and 1. SentiWords.SR contains ~15000 words (e.g. lemma & PoS pairs) which are derived upon extensive evaluation of the translated lexicon.
+In this work, we propose a new lexicon based approach for text polarity detection using sentiment triggers which are adding contextual semantic during the analysis. Lexicon SentiWords.SR is based on the English version lexicon [SentiWords](https://arxiv.org/abs/1510.09079) containing roughly 155.000 English words associated with a sentiment score in the range [-1, 1]. SentiWords.SR contains ~15000 words (e.g. lemma & PoS pairs) which are derived upon extensive evaluation of the translated lexicon.
 
 <img src="./images/translation_stat.png" height="250"/> <img src="./images/polarity_per_pos.png" height="250"/> 
 
@@ -26,7 +26,7 @@ have a purpose to modify the polarity intensity of an upcoming sentiment-laden w
 ```
 
 ### Negations
-SRPOL considers negations for the upcoming phrase which could include adverb and negation modifiers in addition to the first upcoming standard sentiment-laden word. It identifies negation signals such as the Serbian words 'ne' or 'ni' (eng. 'not') which reverse the score:
+SRPOL considers negations for the upcoming phrase which could include adverb and negation modifiers in addition to the first upcoming standard sentiment-laden word. It identifies negation signals such as the Serbian words `ne`, `ni` or `nije` (eng. 'not') which reverse the score:
 
 ```math
 \textit{"Film\ \textbf{nije}\ ($\rightarrow$ NEG)\ \textbf{zanimljiv}" (p=+0.53) $\xrightarrow[\times (-1)]{+0.53 }$ -0.53}
