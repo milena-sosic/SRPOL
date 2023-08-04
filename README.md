@@ -38,15 +38,18 @@ In this work, we propose a new lexicon based approach for text polarity detectio
   
 ```math
 
-\textit{"Divan (p=+0.4)\ film (p=+0.14) 😊 (p=+0.678)" $\xrightarrow[]{}$ +0.41}
+\textit{"Divan (p=+0.4)\ film (p=+0.14) (p=+0.678)" $\xrightarrow[]{}$ +0.41}
 ```
 
 ### Segmentation
 
 ```math 
-P_{text} = \frac{\sum_{i}{S}w_{i} * P_{s}^{i}}{\sum_{i}^{S}w_{i}}, w_{i}=\sum_{m}^{S}|sign(P_{s}^{i}) = sign(P_{s}^{m})|
+P_{text} = \frac{\sum_{i}w_{i} * P_{s}^{i}}{\sum_{i}w_{i}}, i in [1, S]
 ```
 ```math 
-P_{s} = \frac{\sum_{i}^{k}P_{w}^{i}}{k}
+w_{i}=\sum_{m}^{S}|sign(P_{s}^{i}) = sign(P_{s}^{m})|
+```
+```math 
+P_{s} = \frac{\sum_{i}P_{w}^{i}}{k}, i in [1, S], k in [1, S]
 ```
 
