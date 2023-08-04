@@ -11,7 +11,7 @@ Identifying the semantic orientation or polarity of words is one of the most imp
 
 In this work, we propose a new lexicon based approach for text polarity detection using sentiment triggers which are adding contextual semantic during the analysis. 
 
-<img src="./images/translation_stat.png" height="300"/> <img src="./images/polarity_per_pos.png" height="300"/> 
+<img src="./images/translation_stat.png" height="250"/> <img src="./images/polarity_per_pos.png" height="250"/> 
 
 
 The existing word polarity dictionary in Serbian has been extended containing approximately 15000 words annotated with polarity strength. 
