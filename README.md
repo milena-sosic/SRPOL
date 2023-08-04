@@ -38,7 +38,7 @@ In this work, we propose a new lexicon based approach for text polarity detectio
   
 ```math
 
-\textit{"Divan (p=+0.4)\ film (p=+0.14) 😍 (p=+0.678)" $\xrightarrow[]{}$ +0.41}
+\textit{"Divan (p=+0.4)\ film (p=+0.14) 😊 (p=+0.678)" $\xrightarrow[]{}$ +0.41}
 ```
 
 ### Segmentation
