@@ -44,7 +44,7 @@ have a purpose to modify the polarity intensity of an upcoming sentiment-laden w
 ```
 
 ### Emoticons and Emojis
-  
+Sentiment of emojis has been calculated using the [Emoji Sentiment Ranking v1.0](https://kt.ijs.si/data/Emoji_sentiment_ranking/index.html) lexicon.
 
 ```math 
 \textit{"Divan (p=+0.4)\ film (p=+0.14)} 
