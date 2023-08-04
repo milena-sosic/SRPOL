@@ -25,7 +25,7 @@ In this work, we propose a new lexicon based approach for text polarity detectio
 ### Exclamation Marks
   
 ```math 
-\textit{"Odličan film\textbf{!}"($\leftarrow$ $\times$ 1.06)} $\xrightarrow[\times 1.06]{p=+0.57}$+0.60
+\textit{"Odličan film\textbf{!}"($\leftarrow\times$ 1.06)} $\xrightarrow[\times 1.06]{p=+0.57}$+0.60
 ```
 
 ### Elongated Words
@@ -36,7 +36,10 @@ In this work, we propose a new lexicon based approach for text polarity detectio
 
 ### Emoticons and Emojis
   
-```math 
+```math
+\NewDocumentCommand\emojismiley{}{
+    \includegraphics[scale=0.05]{./images/u1F60D.png}
+}
 \textit{"Divan (p=+0.4)\ film (p=+0.14) $\emojismiley$ (p=+0.678)" $\xrightarrow[]{}$ +0.41}
 ```
 
