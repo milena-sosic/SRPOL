@@ -22,14 +22,14 @@ Serbian sentiment framework (SRPOL), relying on the new lexicon and the followin
 have a purpose to modify the polarity intensity of an upcoming sentiment-laden word, but not to change its orientation.
   
 ```math 
-\mathit{"\mathbf{Veoma}\ (\rightarrow MOD=1.2)\ \mathbf{dobar}\ (p=+0.43)\ film..." \xrightarrow[]{1.2 \times (+0.43) }$ +0.52}
+\mathit{"\mathbf{Veoma}\ (\rightarrow MOD=1.2)\ \mathbf{dobar}\ (p=+0.43)\ film..." $\xrightarrow[]{1.2 \times (+0.43) }$ +0.52}
 ```
 
 ### Negations
 SRPOL considers negations for the upcoming phrase which could include adverb and negation modifiers in addition to the first upcoming standard sentiment-laden word. It identifies negation signals such as the Serbian words `ne`, `ni` or `nije` (eng. 'not') which reverse the score:
 
 ```math
-\textit{"Film\ \textbf{nije}\ ($\rightarrow$ NEG)\ \textbf{zanimljiv}" (p=+0.53) $\xrightarrow[\times (-1)]{+0.53 }$ -0.53}
+\mathit{"Film\ \mathbf{nije}\ ($\rightarrow$ NEG)\ \mathbf{zanimljiv}" (p=+0.53) $\xrightarrow[\times (-1)]{+0.53 }$ -0.53}
 ```
 
 ### Exclamation Marks
