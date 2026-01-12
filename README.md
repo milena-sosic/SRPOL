@@ -22,26 +22,26 @@ Serbian sentiment framework (SRPOL), relying on the new lexicon and the followin
 have a purpose to modify the polarity intensity of an upcoming sentiment-laden word, but not to change its orientation.
   
 ```math 
-\mathit{"\mathbf{Veoma}\ (\rightarrow MOD=1.2)\ \mathbf{dobar}\ (p=+0.43)\ film..." \xrightarrow[]{\phantom{xxxx}1.2 \times (+0.43)\phantom{xxxx} } +0.52}
+\mathit{"\mathbf{Veoma}\ (\rightarrow MOD=1.2)\ \mathbf{dobar}\ (p=+0.43)\ film..." \xrightarrow[]{\rule{1.5cm}{0pt}1.2 \times (+0.43)\rule{1.5cm}{0pt} } +0.52}
 ```
 
 ### Negations
 SRPOL considers negations for the upcoming phrase which could include adverb and negation modifiers in addition to the first upcoming standard sentiment-laden word. It identifies negation signals such as the Serbian words `ne`, `ni` or `nije` (eng. 'not') which reverse the score:
 
 ```math
-\mathit{"Film\ \mathbf{nije}\ (\rightarrow$ NEG)\ \mathbf{zanimljiv}" (p=+0.53) \xrightarrow[\phantom{xxxx}\times (-1)\phantom{xxxx}]{+0.53 } -0.53}
+\mathit{"Film\ \mathbf{nije}\ (\rightarrow$ NEG)\ \mathbf{zanimljiv}" (p=+0.53) \xrightarrow[\rule{1.5cm}{0pt}\times (-1)\rule{1.5cm}{0pt}]{+0.53 } -0.53}
 ```
 
 ### Exclamation Marks
 exclamation mark increase the perceived sentiment by an average of 6\% for one, and of 18\% for the sequence of more than two exclamation marks.
 ```math 
-\mathit{"Odličan film\mathbf{!}"(\leftarrow\times 1.06)} \xrightarrow[\phantom{xxxx}\times 1.06\phantom{xxxx}]{p=+0.57}+0.60
+\mathit{"Odličan film\mathbf{!}"(\leftarrow\times 1.06)} \xrightarrow[\rule{1.5cm}{0pt}\times 1.06\rule{1.5cm}{0pt}]{p=+0.57}+0.60
 ```
 
 ### Elongated Words
 Words that contains a repeating character or group of characters more than two times, emphasizing that word has been identified as sentiment trigger
 ```math 
-\mathit{"Tako\ \mathbf{dooooosadan} (p=-0.24)..." \xrightarrow[1.27]{\phantom{xxxx}\times 1.05^{chr(o)\phantom{xxxx}} } "Tako\ \mathbf{dosadan}..."(p=-0.30)}
+\mathit{"Tako\ \mathbf{dooooosadan} (p=-0.24)..." \xrightarrow[1.27]{\rule{1.5cm}{0pt}\times 1.05^{chr(o)\rule{1.5cm}{0pt}} } "Tako\ \mathbf{dosadan}..."(p=-0.30)}
 ```
 
 ### Emoticons and Emojis
