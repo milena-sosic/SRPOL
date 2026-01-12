@@ -22,26 +22,26 @@ Serbian sentiment framework (SRPOL), relying on the new lexicon and the followin
 have a purpose to modify the polarity intensity of an upcoming sentiment-laden word, but not to change its orientation.
   
 ```math 
-\mathit{"\mathbf{Veoma}\ (\rightarrow MOD=1.2)\ \mathbf{dobar}\ (p=+0.43)\ film..." \xrightarrow[]{1.2 \times (+0.43) } +0.52}
+\mathit{"\mathbf{Veoma}\ (\rightarrow MOD=1.2)\ \mathbf{dobar}\ (p=+0.43)\ film..." \longrightarrow[]{1.2 \times (+0.43) } +0.52}
 ```
 
 ### Negations
 SRPOL considers negations for the upcoming phrase which could include adverb and negation modifiers in addition to the first upcoming standard sentiment-laden word. It identifies negation signals such as the Serbian words `ne`, `ni` or `nije` (eng. 'not') which reverse the score:
 
 ```math
-\mathit{"Film\ \mathbf{nije}\ (\rightarrow$ NEG)\ \mathbf{zanimljiv}" (p=+0.53) \xrightarrow[\times (-1)]{+0.53 } -0.53}
+\mathit{"Film\ \mathbf{nije}\ (\rightarrow$ NEG)\ \mathbf{zanimljiv}" (p=+0.53) \longrightarrow[\times (-1)]{+0.53 } -0.53}
 ```
 
 ### Exclamation Marks
 exclamation mark increase the perceived sentiment by an average of 6\% for one, and of 18\% for the sequence of more than two exclamation marks.
 ```math 
-\mathit{"Odličan film\mathbf{!}"(\leftarrow\times$ 1.06)} \xrightarrow[\times 1.06]{p=+0.57}+0.60
+\mathit{"Odličan film\mathbf{!}"(\leftarrow\times$ 1.06)} \longrightarrow[\times 1.06]{p=+0.57}+0.60
 ```
 
 ### Elongated Words
 Words that contains a repeating character or group of characters more than two times, emphasizing that word has been identified as sentiment trigger
 ```math 
-\mathit{"Tako\ \mathbf{dooooosadan} (p=-0.24)..." \xrightarrow[1.27]{\times 1.05^{chr(o)} } "Tako\ \mathbf{dosadan}..."(p=-0.30)}
+\mathit{"Tako\ \mathbf{dooooosadan} (p=-0.24)..." \longrightarrow[1.27]{\times 1.05^{chr(o)} } "Tako\ \mathbf{dosadan}..."(p=-0.30)}
 ```
 
 ### Emoticons and Emojis
@@ -50,7 +50,7 @@ Sentiment of emojis has been calculated using the [Emoji Sentiment Ranking v1.0]
 ```math 
 \mathit{"Divan (p=+0.4)\ film (p=+0.14)} 
 ```
-😊
+
  ```math
 \mathit{(p=+0.678)" $\xrightarrow[]{}$ +0.41}
 ```
