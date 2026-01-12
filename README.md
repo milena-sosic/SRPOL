@@ -22,7 +22,7 @@ Serbian sentiment framework (SRPOL), relying on the new lexicon and the followin
 have a purpose to modify the polarity intensity of an upcoming sentiment-laden word, but not to change its orientation.
   
 ```math 
-\textit{"\textbf{Veoma}\ (\rightarrow MOD=1.2)\ \textbf{dobar}\ (p=+0.43)\ film..." \xrightarrow[]{1.2 \times (+0.43) }$ +0.52}
+\mathit{"\mathbf{Veoma}\ (\rightarrow MOD=1.2)\ \mathbf{dobar}\ (p=+0.43)\ film..." \xrightarrow[]{1.2 \times (+0.43) }$ +0.52}
 ```
 
 ### Negations
